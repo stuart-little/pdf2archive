@@ -357,7 +357,7 @@ run gs $MSGOPTS \
     -dCompatibilityLevel=1.4 \
     -dEmbedAllFonts=true -dSubsetFonts=true \
     -dCompressFonts=true -dCompressPages=true \
-    -dUseCIEColor -sColorConversionStrategy=RGB \
+    -sColorConversionStrategy=RGB \
     -dDownsampleMonoImages=false -dDownsampleGrayImages=false -dDownsampleColorImages=false \
     -dAutoFilterColorImages=false -dAutoFilterGrayImages=false \
     -sDEVICE=pdfwrite \
@@ -367,7 +367,7 @@ run gs $MSGOPTS \
     -dPDFA=1 -dBATCH -dNOPAUSE -dNOOUTERSAVE \
     $QUALITYOPTS \
     -dCompatibilityLevel=1.4 -dPDFACompatibilityPolicy=1 \
-    -dUseCIEColor -sProcessColorModel=DeviceRGB -sColorConversionStrategy=RGB \
+    -sProcessColorModel=DeviceRGB -sColorConversionStrategy=RGB \
     -sOutputICCProfile=$ICCTMPFILE \
     -sDEVICE=pdfwrite \
     -sOutputFile=$OUTPUT $TMPFILE $PSTMPFILE
